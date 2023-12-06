@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin:  0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Gameplay';
+    src: url(/ASSETS/fonts/Gameplay.ttf);
+}
+
+@font-face {
+    font-family: 'Orange Kid';
+    src: url(/ASSETS/fonts/ORANGEKI.TTF);
+}
+body{
+    background-image: url(/ASSETS/img/background2.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    height: 100vh;
+}
+
+
+#main_container{
+    background-color: rgba(0, 0, 0, 0.641);
+    color: #058CD7;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    font-family: 'Orange Kid', sans-serif;
+    letter-spacing: 2px;
+    padding: 1em;    
+    height: 25em;
+    width: 40%;
+    
+}
+
+#title_container{
+    color:rgb(216, 222, 227);
+    font-family: 'Gameplay', sans-serif !important;
+    text-align: center;
+}
+
+#score_board{
+    margin: 20px auto;
+    border: 3px solid #058CD7;
+    border-radius: 4px;
+    text-align: center;
+    font-size: medium;
+    width: 9em;
+    padding: 1em;
+    position: relative; 
+    z-index: 1;
+}
+
+.badge{
+    background-color: rgb(216, 222, 227);
+    border-radius: 5px;
+    z-index: 2;
+    padding: 5px;
+}
+
+#user{
+    position: absolute;
+    top: 10px;
+    left: -25px;
+}
+
+#computer{
+    position: absolute;
+    top: 10px;
+    right: -35px;
+}
+#results{
+    color: rgb(216, 222, 227);
+    padding: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+#subtitle_container{
+    color: rgb(216, 222, 227);
+    padding: 1em;
+    text-align: center;
+}
+
+#choices{
+    padding: 0.5em;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.choice{
+    display: inline-block;
+    border: 2px solid #058CD7;
+    border-radius: 50%;
+    margin-left: 1em;
+    padding: 2px;
+    width: 3em;
+    height: 3em;
+}
+
+#choice_rock{
+    background-image: url(/ASSETS/img/piedra.png);
+}
+
